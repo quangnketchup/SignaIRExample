@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SignaIRWebClient.Models;
 
 namespace SignaIRWebClient.Data
 {
@@ -9,5 +10,6 @@ namespace SignaIRWebClient.Data
             : base(options)
         {
         }
+        public DbSet<ChatRoom> ChatRoom { get; set; }
     }
 }
